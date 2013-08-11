@@ -72,12 +72,14 @@ class DV_MULTIMEDIA(DV_ENCAPSULATED):
 
      #computada a partir do valor de compression_algorith_atribute. True, se os dados estão serializados em formato comprimido
      def is_compressed(self):
-         if(self.compression_algoritm <> None):
-             return True
-         else:return False
+      if(self.compression_algoritm <> None):
+       return True
+      else:return False
 
 
-     #computada a partir do atributo integrity_check_algorithm. True se uma checagem de integridade foi computada
+
+     #computado a partir do atributo integrity_check_algorithm. True se uma checagem de integridade foi feita
+
       def has_integrity_check(self):
           if(self.integrity_check_algorithm <> None):
               return True
