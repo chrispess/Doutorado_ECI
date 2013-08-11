@@ -7,6 +7,7 @@ from openehr.BASIC_TYPES import typeInt
 from openehr.rm.datatypes.uri.DV_URI import DV_URI
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.datatypes.encapsulated.DV_ENCAPSULATED import DV_ENCAPSULATED
+from PIL import Image
 
 #especializaão da classse DV_ENCAPSULATED para audiovisual e tipos de biosinais.
 
@@ -24,4 +25,10 @@ class DV_MULTIMEDIA(DV_ENCAPSULATED):
     #checksum de verificação de integridade criptográfica
     integrity_check = []
 
-    #
+    #tipo de verificação de integridade. um código advindo do openEHR code set "integrity check"
+    integrity_check_algorithm = CODE_PHRASE
+
+    #thumbnail para este item, se existir
+    #para evitarcircularidade da especificação OpenEHR, que define thumbnail = DV_MULTIMEDIA,optou-se por utilizar
+    #o tipo "Image"  da "python image library" ou PIL
+    thumbnail = Image
