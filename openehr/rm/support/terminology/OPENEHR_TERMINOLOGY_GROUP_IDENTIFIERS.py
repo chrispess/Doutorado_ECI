@@ -76,4 +76,4 @@ class OPENEHR_TERMINOLOGY_GROUP_IDENTIFIERS():
 
 
     def valid_terminology_group_id(self,an_id = typeStr):
-        list_constants = ["Terminology_id","OpenEHR" ]
+        list_constants = ["OpenEHR", "audit change type", "attestation reason","composition category", "event math function", "instruction states", "instruction transitions", "null flavours", "property", "participation function", "participation mode", "subject relationship", "setting", "term mapping purpose", "version lifecycle state"]
