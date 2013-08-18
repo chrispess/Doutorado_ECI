@@ -74,6 +74,9 @@ class OPENEHR_TERMINOLOGY_GROUP_IDENTIFIERS():
     Group_id_version_lifecycle_state = typeStr
     Group_id_version_lifecycle_state = "version lifecycle state"
 
-
+    #função de validação que testa se um dado identificador
+    #está no conjunto de identificadores definido na classe
     def valid_terminology_group_id(self,an_id = typeStr):
         list_constants = ["OpenEHR", "audit change type", "attestation reason","composition category", "event math function", "instruction states", "instruction transitions", "null flavours", "property", "participation function", "participation mode", "subject relationship", "setting", "term mapping purpose", "version lifecycle state"]
+        if an_id is list_constants:
+            return True
