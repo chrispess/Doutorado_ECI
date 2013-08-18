@@ -8,6 +8,7 @@ from openehr.rm.support.terminology.OPENEHR_TERMINOLOGY_GROUP_IDENTIFIERS import
 from openehr.rm.support.terminology.TERMINOLOGY_ACCESS import TERMINOLOGY_ACCESS
 from openehr.rm.support.terminology.CODE_SET_ACCESS import CODE_SET_ACCESS
 
+
 class TERMINOLOGY_SERVICE(OPENEHR_CODE_SET_IDENTIFIERS, OPENEHR_TERMINOLOGY_GROUP_IDENTIFIERS):
 
     #construtor
