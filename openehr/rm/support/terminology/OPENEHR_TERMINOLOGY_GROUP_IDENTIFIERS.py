@@ -3,6 +3,10 @@ __author__ = 'chrispess'
 
 from openehr.BASIC_TYPES import typeStr
 
+#lista de identificadores de grupos de terminologias
+# do "OpenEHR terminology"
+
+
 class OPENEHR_TERMINOLOGY_GROUP_IDENTIFIERS():
 
     #construtor
@@ -10,7 +14,7 @@ class OPENEHR_TERMINOLOGY_GROUP_IDENTIFIERS():
         pass
 
 
-    #
+    #constante igual a "OpenEHR"
     Terminology_id = typeStr
 
 
