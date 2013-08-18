@@ -53,13 +53,48 @@ class ARCHETYPE_ID(OBJECT_ID):
     versionID = typeStr
 
     #construtor
-    def __init__(self, rm_originator, rm_name, rm_entity, domain_concept, specialization, version_id):
+    def __init__(self, rm_qualifiedRmEntity, rm_originator, rm_name, rm_entity, domain_concept, specialization, version_id):
+        self.qualifiedRmEntity = rm_qualifiedRmEntity
         self.rmOriginator = rm_originator
         self.rmName = rm_name
         self.rmEntity = rm_entity
         self.domainConcept = domain_concept
         self.specialization = specialization
         self.versionID = version_id
+
+
+    def qualified_rm_entity(self):
+        return self.qualifiedRmEntity
+
+
+    def domain_concept(self):
+        return self.domainConcept
+
+
+    def rm_originator(self):
+        return self.rmOriginator
+
+
+    def rm_name(self):
+        return self.rmName
+
+
+    def rm_entity(self):
+        return self.rmEntity
+
+
+    def specialisation(self):
+        return self.specialization
+
+
+    def version_id(self):
+        return self.versionID
+
+
+
+
+
+
 
 
 
